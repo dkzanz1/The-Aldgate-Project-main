@@ -1,6 +1,6 @@
 
 import React from "react";
-import {Container, Row, Col, Image} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import NavBar from './components/Navbar';
 import TextMaker from './components/lorem-ipsum';
 import Footer from './components/Footer';
@@ -8,7 +8,7 @@ import HeroSection from './components/HeroSection';
 import CreateCard from "./components/card";
 import Section from './components/Section';
 import MakeContact from './components/makeContact';
-
+import AboutUs from './components/Aboutussection';
 
 function App() {
   return (
@@ -26,24 +26,7 @@ function App() {
     
        
           
-            <Row >
-              <Col>
-                <h2 className="text-center">About Us</h2>
-                <div className=" position-relative text-center">
-                    <Image src="../images/building-in-london.jpeg" 
-                    className="column" 
-                    alt="" 
-                    height="400px" 
-                    width="100%" 
-                    />
-                    <div className="position-absolute top-50 start-50 translate-middle" style = {{ color: 'white' }} >
-                      <h3>Intro text</h3>
-                      <TextMaker />
-                    </div>
-                </div>
-              </Col>
-            </Row>
-
+            <AboutUs />
             <Row>
               <Col md={6}>
                 <h2>Next Section 2</h2>

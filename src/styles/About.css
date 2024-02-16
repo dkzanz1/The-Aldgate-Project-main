@@ -1,0 +1,10 @@
+.text-background {
+    background-color: rgba(128, 128, 128, 0.5); /* Grey background with 50% opacity */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+  
+  .text-background h3,
+  .text-background p {
+    margin: 0; /* Remove default margin */
+  }
