@@ -28,7 +28,7 @@ function App() {
           
             <Row >
               <Col>
-                <h2 className="text-center">Main Photo</h2>
+                <h2 className="text-center">About Us</h2>
                 <div className=" position-relative text-center">
                     <Image src="../images/building-in-london.jpeg" 
                     className="column" 
