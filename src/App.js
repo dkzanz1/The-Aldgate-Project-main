@@ -29,18 +29,18 @@ function App() {
             <Row >
               <Col>
                 <h2 className="text-center">Main Photo</h2>
-                <Col>
+                <div className=" position-relative text-center">
                     <Image src="../images/building-in-london.jpeg" 
                     className="column" 
                     alt="" 
                     height="400px" 
                     width="100%" 
                     />
-                    <div className="column">
-                      <h3 text-align="center">Intro text</h3>
+                    <div className="position-absolute top-50 start-50 translate-middle" style = {{ color: 'white' }} >
+                      <h3>Intro text</h3>
                       <TextMaker />
                     </div>
-                </Col>
+                </div>
               </Col>
             </Row>
 
