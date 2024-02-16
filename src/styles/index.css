@@ -1,0 +1,43 @@
+/* resets default browser styles */
+* {
+  box-sizing: border-box;
+}
+/* Replace with your desired primary color code */
+:root {
+  --primary-color-1:rgb(238, 230, 239);
+  --primary-color-2:rgb(11, 12, 10);
+  --primary-color-3: #39353e;
+}
+body {
+  /* support for internet explorer work around */
+  display: flex;
+  flex-direction: column;
+  /* fin */
+  font-family:
+  Ariel,  
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans', 
+    'Droid Sans', 
+    sans-serif;
+    /* background-color: #d7cccc;
+    color: #d11b1b; */
+    /* remove webkit when not required */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,h2,p {
+   margin:0;
+   padding: 0;
+   /* Sets background and text color */
+   background-color: var(--primary-color-1);
+   color:var(--primary-color-3);
+  }
+
+
+
+

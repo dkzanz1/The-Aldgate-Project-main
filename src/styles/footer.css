@@ -1,0 +1,19 @@
+footer {
+    background-color: black;
+}
+.footer-section {
+    color:goldenrod;
+  
+}
+.social-icons {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-evenly; /* Distribute items evenly along the main axis */
+}
+.social-icons a {
+    margin-right: 20px;
+}
+.social-icons a:last-child {
+    margin-right: 0;
+   
+    
+}

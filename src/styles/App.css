@@ -1,0 +1,165 @@
+/* not currently being applied */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: calc(10px + 1vmin);
+}
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+.App-header { 
+  display: flex;
+  flex-direction: column;
+  font-size: calc(30px + 1vmin);
+}
+div .App-box-logo {
+  text-align: left;
+  background-color: rgb(210, 189, 189);
+}
+.App-logo {
+  height: 8vmin;
+  margin-top:2px;
+  margin-left: 2px;
+  margin-right:4px;
+  padding: 2px;
+}
+.heart {
+  color: #ff0000;
+}
+.small {
+  font-size: 0.75rem;
+}
+.App-NaviBar-crumbs { 
+ margin-top:20px;
+}
+.App-NaviBar-crumbs ul { 
+  list-style-type:none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+/* color for nav-link & medai-links  */
+.App-NaviBar-crumbs li a {
+  color:rgb(185, 60, 29);
+  text-align: center;
+  text-decoration: none;
+  
+ 
+}
+.App-NaviBar-crumbs .make-contact-btn {
+  /* margin-left: auto; */
+  margin-left: 20px;
+}
+
+.page-main img {
+width: 100%;
+height: auto;
+justify-content: center;
+border: silver 5px solid;
+}
+.page-main section {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+section .text-maker {
+  width:  80%;
+  height: 300px;
+  display: inline-flexbox;
+  margin : 25px;
+  padding: 15px;
+}
+section .App-picture {
+  height: 450px;
+  width: 110%;
+}
+ /***************** photo gallery ***********************/
+ .photo-gallery ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-gallery li {
+ height: 40vh;
+ flex-grow: 1;
+ list-style-type: none;
+}
+.photo-gallery img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit:cover;
+  vertical-align: bottom;
+}
+/* ***************footer css ***************************/
+.App-footer {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 1vmin);
+}
+.App-Media-crumbs  {
+  margin-top: 20px;
+}
+.App-Media-crumbs ul {
+  font-size: calc(10px + 1.5vmin);
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.App-Media-crumbs li a {
+  text-decoration: none;
+ 
+
+}
+
+
+
+
+
+/* @media screen and (min-width: 550px) {
+  .App-NaviBar-crumbs ul {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .App-NaviBar-crumbs .crumb {
+  display: inline-block;
+  margin: 10px;
+  padding: 0 30px;
+}
+
+
+.Media-crumbs .crumb {
+  display: inline-block;
+ 
+  margin: 10px;
+  padding: 0 30px;
+  
+}
+/* .page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+} */
+/* .page-main section {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+} */
+/* aligns the first picture */
+
+
+/* section .text-maker {
+  width:  80%;
+  height: 300px;
+  display: inline-flexbox;
+  margin : 25px;
+  padding: 15px;
+} */
+
+
