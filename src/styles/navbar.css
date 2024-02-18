@@ -1,9 +1,11 @@
 
-/* currently not applied  */
 /* navbar.css */
 
-.custom-navbar .nav-link {
-    color: gold !important; /* Set the color of all nav links to gold */
+.custom-navbar .nav-link  {
+    color: rgb(238, 238, 14) !important; /* Set the color of all nav links to gold */
+}
+.navbar-toggler .collapsed {
+    color: rgb(238, 238, 14) !important;
 }
 
 /* Add any other custom styles for the navbar here */
