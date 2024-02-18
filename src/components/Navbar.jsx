@@ -19,11 +19,11 @@ function NavBar() {
                             <Nav.Link  href="/" >Contact</Nav.Link>
                         </Nav.Item> 
                                 <NavDropdown title="About us" id="basic-nav-dropdown" >
-                                    <NavDropdown.Item href="/">Action</NavDropdown.Item> 
-                                    <NavDropdown.Item href="/">Next Action</NavDropdown.Item>
-                                    <NavDropdown.Item href="/">Another Action</NavDropdown.Item>
+                                    <NavDropdown.Item href="/">About us</NavDropdown.Item> 
+                                    <NavDropdown.Item href="/">Ours services</NavDropdown.Item>
+                                    <NavDropdown.Item href="/">Make an Enquiry</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href="/">Separate Action</NavDropdown.Item>
+                                    <NavDropdown.Item href="/">Request a quote</NavDropdown.Item>
                                 </NavDropdown>
                         <Nav.Link>
                             <Row className="button-group">
