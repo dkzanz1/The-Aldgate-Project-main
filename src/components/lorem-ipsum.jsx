@@ -2,7 +2,7 @@ import React from "react";
 
 function TextMaker () {
     return <>
-    <div className="column" >
+    <div className="column  text-center" >
        <p>
         Lorem ipsum dolor sit amet,
         Donec lobortis nisl tellus, 

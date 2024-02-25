@@ -9,6 +9,7 @@ import TextMaker from './components/lorem-ipsum';
 import Footer from './components/Footer';
 // import Section from './components/Section';
 import MakeContact from './components/makeContact';
+import "./styles/twosection.css";
 
 
 function App() {
@@ -21,42 +22,44 @@ function App() {
       <main className="page-main">
 
       <Container>
-        <div style={{ display:'flex' }} className="text-center">
+        <div style={{ display: 'flex', justifyContent:'center' }} className="text-center">
           <CreateCard />
         </div>
             <AboutUs />
             <Row>
               <Col md={6}>
-                <h2>Meet the team</h2>
+                <h2 className="text-center">Meet the team</h2>
                  <div className="item">
+                 <div className="App-picture-container">{/* Overlay to hide bottom 1/3 of the image */}
                     <img
                     src="../images/pexels-photo-1106476.jpeg"
                     className="App-picture" 
                     alt="" 
-                    height="300px" 
-                    width="100%"
-                    />
-                    <div className="text-maker">
+                    /> 
+                    <div className="text-wrapper">
                     <TextMaker />
                     </div>
                   </div>
+                </div>
               </Col>
 
               <Col md={6}>
-          <h2>Planning & Design</h2>
-          <div className="item" >
-            <div className="text-maker">
-            
-            </div>
-            <img src="../images/pexels-photo-5292195.webp"
-             className="App-picture" 
-             alt=""
-             height="300px" 
-             width="100%"
-             />
-             <TextMaker />
-          </div>
-          </Col>
+                <h2  className="text-center">Planning & Design</h2>
+                <div className="item" >
+                <div className="App-picture-container">
+                      
+                        <img src="../images/pexels-photo-5292195.webp"
+                        className="App-picture" 
+                        alt=""
+                        
+                        />
+                      <div className="text-wrapper">
+                  <TextMaker />
+               </div>
+               </div> 
+               </div>
+                
+              </Col>
        
           <MakeContact />
           </Row>
@@ -69,7 +72,7 @@ function App() {
       </footer>
    
       {/* container ends*/}
-      </div>
+    </div>  
      
   );
 }
