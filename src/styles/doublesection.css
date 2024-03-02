@@ -1,0 +1,42 @@
+/* doublesection.css */
+/* doublesection.css */
+
+.double-section-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+
+.image-container {
+  position: relative;
+  overflow :hidden;
+ 
+}
+
+.App-picture {
+  width: 100%;
+  max-height: 600px; /* Adjust maximum height as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Add background color */
+  color: white; /* Set text color */
+  padding: 20px; /* Add padding for text */
+  transition: opacity 0.1s; /* Add smooth transition */
+}
+
+.text-overlay h2 {
+  margin-top: 0;
+}
+
+.text-overlay p {
+  margin-bottom: 0;
+}
+
+
