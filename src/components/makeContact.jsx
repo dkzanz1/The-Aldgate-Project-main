@@ -1,13 +1,29 @@
 import React from "react";
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import axios from 'axios';
 
 function MakeContact(){
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = {
+      email: e.target.elements.email.value,
+      // Add other form fields as needed
+    };
+    try {
+      const response = await axios.post('/api/contact', formData);
+      console.log(response.data); // Handle success response
+      // Optionally, provide feedback to the user
+    } catch (error) {
+      console.error(error); // Handle error response
+      // Optionally, provide feedback to the user
+    }
+  };
     return<>
     <Container>
       <Row className="justify-content-center">
         <Col md={4}>
         <h3 className="text-center mt-3">Contact Form </h3>
-          <Form>
+          <Form onSubmit={handleSubmit}>
 
             <Form.Group  controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>

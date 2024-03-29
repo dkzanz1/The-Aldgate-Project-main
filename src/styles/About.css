@@ -8,4 +8,56 @@
   .text-background p {
     margin: 0; /* Remove default margin */
   }
- 
+  /* Larger screens than 992px */
+ @media (min-width: 992px){
+  .position-relative .img-fluid {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .position-absolute.top-50.start-50.translate-middle.text-white {
+      position: absolute; /* Position the text absolutely */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Center the text within its container */
+      /* height: 400px; */
+      width: 98%;
+      font-size: 1.2rem; /* Adjust the font size as needed */
+    }
+ }
+ /* Medium screens (screens between 768px and 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .position-relative .img-fluid {
+    width: 100%; /* Ensure the image fills the width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .position-absolute.top-50.start-50.translate-middle.text-white {
+    position: static; /* Reset position to normal flow */
+    transform: none; /* Remove transform */
+    /* Adjust other text styling as needed */
+    font-size: 1rem; /* Adjust the font size as needed */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding for better readability */
+  }
+}
+/* Small screens (screens smaller than 768px) */
+@media (max-width: 767px) {
+  .position-relative .img-fluid {
+    width: 100%; /* Ensure the image fills the width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .position-absolute.top-50.start-50.translate-middle.text-white {
+    position: static; /* Reset position to normal flow */
+    transform: none; /* Remove transform */
+    /* Adjust other text styling as needed */
+    font-size: 1rem; /* Adjust the font size as needed */
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Add padding for better readability */
+  }
+
+  .position-absolute.top-50.start-50.translate-middle.text-white .text-container {
+    max-width: 90%; /* Limit the width of the text container */
+  }
+}
