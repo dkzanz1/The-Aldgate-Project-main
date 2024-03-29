@@ -25,14 +25,14 @@ function MakeContact(){
     e.preventDefault();
     if (validateForm()) { 
       try {
-      const response = await axios.post('/api/contact', formValues);
+      const response = await axios.post('https://localhost:3000/api/contact', formValues);
       console.log(response.data); // Handle success response
       setSubmitSuccess(true);
       // Optionally, provide feedback to the user
 
     } catch (error) {
       console.error(error); // Handle error response
-      setSubmitError("an error has occurred while submitting the form please try again")
+      setSubmitError("An error has occurred while submitting the form please try again")
       // Optionally, provide feedback to the user
     }
   }
@@ -115,7 +115,7 @@ function MakeContact(){
                 isInvalid={!!formErrors.location}
                 placeholder="enter your location"
                 aria-label="Enter your location" 
-                // autoComplete=""
+              
                 />
               <Form.Control.Feedback type="invalid">
                 {formErrors.location}
