@@ -1,17 +1,23 @@
 Project created using github generated thru codespace
 Its a react project using the following intended Tech:-
 
-1/M.E.R.N Stack Mongo,Express,React,Node.
-Dependancies 
-"react": "^18.2.0",
-"node": "^21.2.0",
-react "bootstrap": "^5.3.2",
+1/M.E.R.N Stack Mongo,Express,React,
 "lorem-ipsum": "^2.0.8",currently install but not used.
 "name": "codespaces-react",
 Babel 
 JSX
-p
-Principle Layout based on react bootstrap 
+"axios": "^1.6.8",
+    "bootstrap": "^5.3.2",
+    "express": "^4.19.2",
+    "install": "^0.13.0",
+    "lorem-ipsum": "^2.0.8",
+    "npm": "^10.2.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+Principle Layout based on
+react bootstrap 
 *************************************************************
 Note self with regards to github source control updates:-
 To update github add message in message box and press commit then sync.
