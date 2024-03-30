@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import axios from 'axios';
 
+
+
+
 function MakeContact(){
   const [formValues, setFormValues] =  useState({
     email:'',
@@ -25,16 +28,18 @@ function MakeContact(){
     e.preventDefault();
     if (validateForm()) { 
       try {
-      const response = await axios.post('https://localhost:3000/api/contact', formValues);
+      const response = await axios.post('http://localhost:5000/api/contact', formValues);
       console.log(response.data); // Handle success response
       setSubmitSuccess(true);
+      
       // Optionally, provide feedback to the user
 
     } catch (error) {
       console.error(error); // Handle error response
+      
       setSubmitError("An error has occurred while submitting the form please try again")
       // Optionally, provide feedback to the user
-    }
+    } 
   }
 };
   const validateForm = () => {
