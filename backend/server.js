@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const morgan = require('morgan');
 
 const app = express();
 app.use(cors({
@@ -8,6 +9,8 @@ app.use(cors({
     optionsSuccessStatus: 200 // Some legacy browsers (IE11) choke on 204
 }));
 app.use(express.json()); //parse json bodies
+app.use(morgan('dev'));
+
 
 
 
@@ -34,9 +37,10 @@ const contactSchema = new mongoose.Schema({
 //POST endpoint to save contact form data
 app.post('/api/contact', async (req, res) => {
  try {
-    const { name, email, location, message } = req.body;
-    const contact = new Contact ({ name, email, location, message });
+    const { email, password, location, message } = req.body;
+    const contact = new Contact ({ email, password, location, message });
     await contact.save();
+    console.log('recieved data from:', {email, password, location, message});
     res.status(201).send('Contact form data successfully saved!');
  } catch (err) {
     console.error("Error saving contact form data: ", err);
