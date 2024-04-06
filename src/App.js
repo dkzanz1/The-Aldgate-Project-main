@@ -29,11 +29,7 @@ function App() {
           <div style={{ display: 'flex', justifyContent:'center' }} className="text-center">
             <DoubleSection />
           </div>
-          
-              
-       
           <MakeContact />
-          
         </Container>
        
       </main>

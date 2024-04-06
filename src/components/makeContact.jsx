@@ -10,7 +10,7 @@ function MakeContact(){
     email:'',
     password:'',
     location:'',
-    enquiry:''
+    message:''
   });
 
   const [formErrors, setFormErrors] = useState({});
@@ -28,20 +28,21 @@ function MakeContact(){
     e.preventDefault();
     if (validateForm()) { 
       try {
-      const response = await axios.post('http://localhost:5000/api/contact', formValues);
+      const response = await axios.post('http://localhost:8000/api/contact', formValues);
       console.log(response.data); // Handle success response
       setSubmitSuccess(true);
       
       // Optionally, provide feedback to the user
 
-    } catch (error) {
-      console.error(error); // Handle error response
-      
+    } catch (e) {
+      console.error(e); // Handle error response
+      console.log("you broke  down here");
       setSubmitError("An error has occurred while submitting the form please try again")
       // Optionally, provide feedback to the user
     } 
   }
 };
+// form validation
   const validateForm = () => {
     let errors ={};
     let isValid = true;
@@ -58,8 +59,8 @@ function MakeContact(){
       errors.location = 'Location is required';
       isValid = false;
     }
-    if (!formValues.enquiry){
-      errors.enquiry = 'Enquiry is required';
+    if (!formValues.message){
+      errors.message = 'Enquiry is required';
       isValid = false;
     }
     setFormErrors(errors)
@@ -131,16 +132,16 @@ function MakeContact(){
                 <Form.Label>Make an enquiry</Form.Label>
                 <Form.Control 
                 as="textarea"
-                name="enquiry"
-                value={formValues.enquiry}
+                name="message"
+                value={formValues.message}
                 onChange={handleChange}
-                isInvalid={!!formErrors.enquiry}
+                isInvalid={!!formErrors.message}
                 type="text" 
                 placeholder="Enter a Brief overview of your enquiry"
                 aria-label="Enter a Brief overview of your enquiry" 
                  />
               <Form.Control.Feedback type="invalid">
-                {formErrors.enquiry}
+                {formErrors.message}
               </Form.Control.Feedback>
             </Form.Group>
           
