@@ -23,7 +23,7 @@ const  DoubleSection = () => {
                         alt="" />
                     <div className="text-overlay">
                         <p>
-                        As guardians of your building's security,
+                        As guardians of your building'ssafety,
                         we embark on a journey of meticulous planning,
                         where every detail is a piece of the safety puzzle.
                         Our process begins with a comprehensive assessment,
@@ -49,11 +49,11 @@ const  DoubleSection = () => {
                         alt="" />
         
                     <div className="text-overlay">
-                       <p>  Our team comprises seasoned professionals who are committed to ensuring the safety and security of high-rise structures.
+                       <p>  Our team comprises of seasoned professionals who are committed to ensuring the safety and compliance of a;ll our projects.
 
 At the helm, our project manager leads  seamless coordination from planning to installation.
 Their leadership ensures that every project is executed with efficiency and excellence.
-Behind the scenes, our technicians are the backbone of our operation, executing installations with precision and proficiency. Their expertise ensures that every component is seamlessly integrated,
+Behind the scenes, our technicians are the backbone of the operation, executing installations with precision and proficiency. Their expertise ensures that every component is seamlessly integrated,
  delivering maximum protection and peace of mind to our clients.
 Together, our team stands united in our commitment to excellence, innovation, and safety.one project at a time.</p>
                     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import axios from 'axios';
 
@@ -8,15 +8,17 @@ import axios from 'axios';
 
 function MakeContact(){
   const [formValues, setFormValues] =  useState({
-    email:'',
-    password:'',
-    location:'',
-    message:''
+    email: '',
+    password: '',
+    location: '',
+    message: ''
   });
 
   const [formErrors, setFormErrors] = useState({});
   const [submitError, setSubmitError] = useState('');
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);//SET STATE resets success message
+
 
   const handleChange = (e) => {
     setFormValues({
@@ -32,17 +34,28 @@ function MakeContact(){
       const response = await axios.post('http://localhost:8000/api/contact', formValues);
       console.log(response.data); // Handle success response
       setSubmitSuccess(true);
-      
-      // Optionally, provide feedback to the user
-
+      resetForm(); //Reset the form field
+      setFormErrors({});
+      setShowSuccessMessage(true); //Show the success message
     } catch (e) {
       console.error(e); // Handle error response
       console.log("you broke  down here");
-      setSubmitError("An error has occurred while submitting the form please try again")
-      // Optionally, provide feedback to the user
+      //Provide feedback
+      setSubmitError("An error has occurred while submitting the form please try again") 
     } 
   }
 };
+
+const resetForm = () => 
+setFormValues({
+  email: '',
+  password: '',
+  location: '',
+  message: ''
+});
+
+
+
 // form validation
   const validateForm = () => {
     let errors ={};
@@ -67,6 +80,17 @@ function MakeContact(){
     setFormErrors(errors)
     return isValid;
   };
+  //function to hide success message after some time
+  useEffect(() => {
+    let timer;
+    if (submitSuccess) {
+      console.log('Success message will be hidden after 5 seconds');
+      timer = setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 5000);//hide after 5 seconds
+    } 
+    return () => clearTimeout(timer);
+  }, [submitSuccess]);
 
     return (
     <Container>
@@ -74,7 +98,9 @@ function MakeContact(){
         <Col md={4}>
         <h3 className="text-center mt-3">Contact Form </h3>
         {submitError && <Alert variant="danger">{submitError}</Alert>}
-        {submitSuccess && <Alert variant="success">Form submitted successfully!</Alert>}
+        {/* {submitSuccess && <Alert variant="success">Form submitted successfully!</Alert>} */}
+        {showSuccessMessage && <Alert variant="success">Form submitted successfully!</Alert>}
+
         {/* Display submit success message if submission is successful */}
           <Form onSubmit={handleSubmit}>
 
