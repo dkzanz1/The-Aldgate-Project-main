@@ -34,7 +34,7 @@ function Footer() {
             </div>
             </Col>
             <Col md={4} sm={12}>
-            <div className="footer-section">
+            <div className="footer-section" id="contact">
               <h5>Contact us</h5>
                {/* contact form  */}
                 

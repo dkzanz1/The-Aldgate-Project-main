@@ -96,7 +96,7 @@ setFormValues({
     <Container>
       <Row className="justify-content-center">
         <Col md={4}>
-        <h3 className="text-center mt-3">Contact Form </h3>
+        <h3 className="text-center mt-3" id="make-an-enquiry">Contact Form </h3>
         {submitError && <Alert variant="danger">{submitError}</Alert>}
         {/* {submitSuccess && <Alert variant="success">Form submitted successfully!</Alert>} */}
         {showSuccessMessage && <Alert variant="success">Form submitted successfully!</Alert>}

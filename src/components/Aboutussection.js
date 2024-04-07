@@ -9,7 +9,7 @@ function AboutUs() {
           
           <Row>
               <Col xs={12} md={12}>
-                <h2 className="text-center">About Us</h2>
+                <h2 className="text-center" id="about-us-section">About Us</h2>
                 <div className="position-relative text-center text-background">
                     <Image src="./images/building-in-london.jpeg" 
                     className="img-fluid" //image-fluid make responsive 

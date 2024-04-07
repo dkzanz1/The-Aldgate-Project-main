@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Nav, NavDropdown, Button, Navbar, Row, Col} from "react-bootstrap";
+import { link } from "react-router-dom";
 import Logo from "./logo";
 import "../styles/navbar.css";
 
 function NavBar() {
+
     return<>
     {/* styled with react-bootstrap;:- It allows you to use Bootstrap's components directly within your React application without the need for jQuery or Bootstrap's own JavaScript*/}
     <Navbar expand="lg" bg="black" className="custom-navbar"  data-bs-theme="dark">
@@ -16,21 +18,21 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav"  className="justify-content-end "  >
                     <Nav className="ml-auto">
                         <Nav.Item >                             
-                            <Nav.Link  href="/">Contact</Nav.Link>
+                            <Nav.Link  href="#contact">Contact</Nav.Link>
                         </Nav.Item> 
                                 <NavDropdown title="About us" id="basic-nav-dropdown" >
-                                    <NavDropdown.Item href="/">About us</NavDropdown.Item> 
-                                    <NavDropdown.Item href="/">Ours services</NavDropdown.Item>
-                                    <NavDropdown.Item href="/">Make an Enquiry</NavDropdown.Item>
+                                    <NavDropdown.Item href="#about-us-section">About us</NavDropdown.Item> 
+                                    <NavDropdown.Item href="'#our-services">Ours services</NavDropdown.Item>
+                                    <NavDropdown.Item href="#make-an-enquiry">Make an Enquiry</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href="/">Request a quote</NavDropdown.Item>
+                                    <NavDropdown.Item href="#make-an-enquiry">Request a quote</NavDropdown.Item>
                                 </NavDropdown>
                         <Nav.Link>
                             <Row className="button-group">
                             <Col>
-                                <Button variant="outline-primary">Get in Touch</Button>
+                                <Button variant="outline-primary" onClick={handleClick}>Get in Touch</Button>
                             
-                                <Button variant="outline-primary">Request a quote</Button>
+                                <Button variant="outline-primary" href="#make-an-enquiry">Request a quote</Button>
                             </Col>    
                         </Row>
                         </Nav.Link>

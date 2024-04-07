@@ -12,7 +12,7 @@ const CreateCard = () => {
         <Container fluid>
           
             <Row className="justify-content-center mt-5"> {/* Change justify-content-end to justify-content-center */}
-                <Col xs={12} md={12} lg={12} className="text-center"> {/* Add text-center class */}
+                <Col xs={12} md={12} lg={12} className="text-center"id="our-services"> {/* Add text-center class */}
                     <h3>Services</h3>
                     <h6>The Services we provide</h6>
                 </Col>
