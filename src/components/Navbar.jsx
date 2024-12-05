@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, NavDropdown, Button, Navbar, Row, Col} from "react-bootstrap";
-import { link } from "react-router-dom";
+// import { link } from "react-router-dom";
 import Logo from "./logo";
 import "../styles/navbar.css";
 
@@ -30,7 +30,7 @@ function NavBar() {
                         <Nav.Link>
                             <Row className="button-group">
                             <Col>
-                                <Button variant="outline-primary" onClick={handleClick}>Get in Touch</Button>
+                                <Button variant="outline-primary">Get in Touch</Button>
                             
                                 <Button variant="outline-primary" href="#make-an-enquiry">Request a quote</Button>
                             </Col>    

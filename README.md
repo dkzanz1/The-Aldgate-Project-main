@@ -1,11 +1,12 @@
-Project created using github generated thru codespace
+# Project created using github generated thru codespace
+
 Its a react project using the following intended Tech:-
 
 1/M.E.R.N Stack Mongo,Express,React,
 "lorem-ipsum": "^2.0.8",currently install but not used.
 "name": "codespaces-react",
-Babel 
-JSX
+"Babel",
+"JSX"
 "axios": "^1.6.8",
     "bootstrap": "^5.3.2",
     "express": "^4.19.2",
@@ -17,16 +18,14 @@ JSX
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1"
 Principle Layout based on
-react bootstrap 
+react bootstrapped
 *************************************************************
 Note self with regards to github source control updates:-
 To update github add message in message box and press commit then sync.
 *************************************************************
 Mobile navbar styles BUILT with react-bootstrap components
 
-******************
-
-# GitHub Codespaces ♥️ React
+## GitHub Codespaces ♥️ React
 
 Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
 
