@@ -40,7 +40,7 @@ app.post('/api/contact', async (req, res) => {
     const { email, password, location, message } = req.body;
     const contact = new Contact ({ email, password, location, message });
     await contact.save();
-    console.log('recieved data from:', {email, password, location, message});
+    console.log('recieved data from:', {email, location, message});
     res.status(201).send('Contact form data successfully saved!');
  } catch (err) {
     console.error("Error saving contact form data: ", err);
