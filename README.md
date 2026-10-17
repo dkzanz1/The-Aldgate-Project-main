@@ -1,105 +1,38 @@
-# Project created using github generated thru codespace
+# The Aldgate Project — Commercial Client Prototype
 
-Its a react project using the following intended Tech:-
+[![CI Build Verification](https://github.com/dkzanz1/codespaces-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/dkzanz1/codespaces-react/actions/workflows/node.js.yml)
+![Stack](https://img.shields.io/badge/stack-React%2018%20%7C%20Bootstrap%205%20%7C%20FontAwesome-blue)
+![Type](https://img.shields.io/badge/type-Client%20Case%20Study-brightgreen)
 
-1/M.E.R.N Stack Mongo,Express,React,
-"lorem-ipsum": "^2.0.8",currently install but not used.
-"name": "codespaces-react",
-"Babel",
-"JSX"
-"axios": "^1.6.8",
-    "bootstrap": "^5.3.2",
-    "express": "^4.19.2",
-    "install": "^0.13.0",
-    "lorem-ipsum": "^2.0.8",
-    "npm": "^10.2.5",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.10.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
-Principle Layout based on
-react bootstrapped
-*************************************************************
-Note self with regards to github source control updates:-
-To update github add message in message box and press commit then sync.
-*************************************************************
-Mobile navbar styles BUILT with react-bootstrap components
+A tailored, responsive web application prototype engineered to fulfill commercial client requirements and business brand specifications.
 
-## GitHub Codespaces ♥️ React
+> **Context:** Developed as a real-world client commission ("The Aldgate Project") to translate bespoke user interface specifications into a modular, production-ready React application with dynamic component hierarchy and accessible Bootstrap styling.
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+---
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+## 🛠️ Key Architectural & Technical Features
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+- **Componentized Layout Architecture:** Built using React 18 functional components to ensure modularity, clear separation of concerns, and reusable layout blocks.
+- **Responsive UI Framework:** Integrated **React Bootstrap 5** for grid layout alignment, mobile navigation, and modern component aesthetics.
+- **Iconography & Styling Systems:** Standardized visual cues across client touchpoints using SVG FontAwesome packages (`free-brands` and `svg-core`).
+- **Cloud-Ready Development Environment:** Configured with socket overrides and script parameters optimized for cloud environments and GitHub Codespaces.
 
-This project was bootstrapped for you with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 💻 Tech Stack
 
-In the project directory, you can run:
+- **Frontend Framework:** React 18, React DOM
+- **UI & Styling:** Bootstrap 5, React Bootstrap, Custom CSS
+- **Iconography:** FontAwesome SVG Core & React Integrations
+- **Tooling & Build System:** Node.js, npm, GitHub Actions (Node.js CI runner)
 
-### `npm start`
+---
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+## ⚙️ Local Setup & Execution
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+To run this project locally:
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/dkzanz1/codespaces-react.git](https://github.com/dkzanz1/codespaces-react.git)
+   cd codespaces-react
